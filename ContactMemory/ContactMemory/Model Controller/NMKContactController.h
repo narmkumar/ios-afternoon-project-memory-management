@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface NMKContactController : NSObject
 
-@end
+@property (nonatomic, retain) NSMutableArray *contacts;
 
-NS_ASSUME_NONNULL_END
+- (void)createContactWithName:(NSString *)name
+                                phone:(NSString *)phone
+                                email:(NSString *)email;
+
+
+@end

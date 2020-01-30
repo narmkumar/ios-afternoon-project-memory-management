@@ -10,7 +10,7 @@
         <!--Contacts-->
         <scene sceneID="ds7-CC-rA3">
             <objects>
-                <tableViewController id="u9P-7o-3M4" sceneMemberID="viewController">
+                <tableViewController id="u9P-7o-3M4" customClass="NMKContactsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bJj-GI-0jh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
         <!--Add a Contact-->
         <scene sceneID="ibS-ps-gct">
             <objects>
-                <viewController id="KbF-UH-Vuj" sceneMemberID="viewController">
+                <viewController id="KbF-UH-Vuj" customClass="NMKDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qgq-3c-0h8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -10,4 +10,23 @@
 
 @implementation NMKContact
 
+- (instancetype)initWithName:(NSString *)name
+                       phone:(NSString *)phone
+                       email:(NSString *)email {
+    self = [super init];
+    if (self) {
+        _name = [name retain];
+        _phone = [phone retain];
+        _email = [email retain];
+    }
+    return self;
+}
+
+- (void)dealloc {
+    [_name release];
+    [_phone release];
+    [_email release];
+    [super dealloc];
+}
+
 @end
