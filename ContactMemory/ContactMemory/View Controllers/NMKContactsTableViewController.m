@@ -11,6 +11,7 @@
 #import "NMKContactController.h"
 #import "NMKDetailViewController.h"
 
+
 @interface NMKContactsTableViewController ()
 
 @end
@@ -78,6 +79,12 @@
         NMKDetailViewController *destinationVC = (NMKDetailViewController *)[segue destinationViewController];
         destinationVC.controller = self.controller;
     }
+}
+
+#pragma mark - Controller Released
+- (void)dealloc {
+    [_controller release];
+    [super dealloc];
 }
 
 @end
