@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+// class forward declaration:
+@class NMKContactController;
+
 @interface NMKContactsTableViewController : UITableViewController
+
+@property (nonatomic, retain) NMKContactController *controller;
 
 @end
 

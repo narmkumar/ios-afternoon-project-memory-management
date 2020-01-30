@@ -109,8 +109,17 @@
                         <viewLayoutGuide key="safeArea" id="lOL-7j-CTs"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add a Contact" id="NZE-xf-rqr">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BBv-8i-SQ0"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BBv-8i-SQ0">
+                            <connections>
+                                <action selector="saveTapped:" destination="KbF-UH-Vuj" id="sof-r9-0zE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="Wcu-mg-Wlc" id="nay-js-XOP"/>
+                        <outlet property="nameTextField" destination="f14-uI-YI7" id="n3O-Ol-67g"/>
+                        <outlet property="phoneTextField" destination="fJI-Ac-dly" id="2Iq-9r-rsO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihY-3U-3sb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
